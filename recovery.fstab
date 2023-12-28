@@ -1,0 +1,11 @@
+# mount point       fstype    device                                                                flags
+/recovery           emmc      /dev/block/platform/sdhci-tegra.3/by-name/SOS                         flags=display="Recovery";backup=1;flashimg=1;
+/boot               emmc      /dev/block/platform/sdhci-tegra.3/by-name/LNX                         flags=display="Boot";backup=1;flashimg=1;
+/system             ext4      /dev/block/platform/sdhci-tegra.3/by-name/APP                         flags=display="System";backup=1;
+/system_image       emmc      /dev/block/platform/sdhci-tegra.3/by-name/APP                         flags=display="System image";backup=1;flashimg=1;
+/cache              ext4      /dev/block/platform/sdhci-tegra.3/by-name/CAC                         flags=display="Cache";
+/misc               emmc      /dev/block/platform/sdhci-tegra.3/by-name/MSC                         flags=display="Misc";backup=1;flashimg=1;
+/staging            emmc      /dev/block/platform/sdhci-tegra.3/by-name/USP                         flags=display="Staging";
+/metadata           emmc      /dev/block/platform/sdhci-tegra.3/by-name/MDA                         flags=display="Metadata";
+/data               ext4      /dev/block/platform/sdhci-tegra.3/by-name/UDA                         flags=display="Data";
+/sdcard1            vfat      /dev/block/platform/sdhci-tegra.0/by-num/p1                           flags=display="Sdcard1";
